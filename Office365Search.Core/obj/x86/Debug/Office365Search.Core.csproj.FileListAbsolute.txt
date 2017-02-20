@@ -1,0 +1,17 @@
+C:\UWP\DWP\Office365Search\Office365Search.Core\bin\x86\Debug\Office365Search.Core.dll
+C:\UWP\DWP\Office365Search\Office365Search.Core\bin\x86\Debug\Office365Search.Core.pdb
+C:\UWP\DWP\Office365Search\Office365Search.Core\bin\x86\Debug\Office365Search.Core.pri
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\Office365Search.Core.csprojResolveAssemblyReference.cache
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\Office365Search.Core.dll
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\Office365Search.Core.pdb
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\priconfig.xml
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\priconfig.xml.intermediate
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\layout.resfiles
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\layout.resfiles.intermediate
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\resources.resfiles
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\resources.resfiles.intermediate
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\pri.resfiles
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\pri.resfiles.intermediate
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\qualifiers.txt
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\qualifiers.txt.intermediate
+C:\UWP\DWP\Office365Search\Office365Search.Core\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt

@@ -1,0 +1,693 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="PPCRL_AUTHSTATE_E_EXPIRED" xml:space="preserve">
+    <value>The identity has previously been authenticated, but that authentication has expired.</value>
+  </data>
+  <data name="ServerObjectIsNull" xml:space="preserve">
+    <value>Object reference not set to an instance of an object on server.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_FORCE_RENAME_REQUIRED" xml:space="preserve">
+    <value>The user has been evicted; the user is required to create a different ID.</value>
+  </data>
+  <data name="JsonUnknownData" xml:space="preserve">
+    <value>Cannot handle the data at position {0}.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_RSTR_MISSING_PRIVATE_KEY" xml:space="preserve">
+    <value>The client cannot retrieve a certificate from the response.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_INVALID_SECURITY_TOKEN" xml:space="preserve">
+    <value>The partner STS returned a wst:InvalidSecurityToken error.</value>
+  </data>
+  <data name="ObjectNameType" xml:space="preserve">
+    <value>type {0}</value>
+  </data>
+  <data name="SharePointClientCredentialsNotSupported" xml:space="preserve">
+    <value>Cannot contact web site '{0}' or the web site does not support SharePoint Online credentials. The response status code is '{1}'. The response headers are '{2}'.</value>
+  </data>
+  <data name="PPCRL_E_CREDINFO_CORRUPTED" xml:space="preserve">
+    <value>The saved credential is not valid.  If the user interface (UI) receives this error after the user attempted to sign in with a saved credential, it should remove the remembered password entry, activate the password field, and display the following error: "Re-enter your password."</value>
+  </data>
+  <data name="MimeReaderResetCalledBeforeEOF" xml:space="preserve">
+    <value>Reset called on MIME header reader before end of file.</value>
+  </data>
+  <data name="PPCRL_E_NO_UI" xml:space="preserve">
+    <value>The call failed because no UI flag is set, but UI is required to collect credentials. </value>
+  </data>
+  <data name="PPCRL_REQUEST_E_KID_HAS_NO_CONSENT" xml:space="preserve">
+    <value>The Microsoft account owner is a minor and the parent has not consented to allow the minor to sign in to this service.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_CLIENT_DEPRECATED" xml:space="preserve">
+    <value>The client requesting authentication is no longer supported by the Microsoft account login server. The user must upgrade to a newer version of the application with a newer version of IDCRL.</value>
+  </data>
+  <data name="MimeWriterInvalidStateForHeader" xml:space="preserve">
+    <value>MIME writer cannot write MIME header in state '{0}'.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_NEED_PASSWORD" xml:space="preserve">
+    <value>The partner requires a password to sign in.</value>
+  </data>
+  <data name="MimeReaderMalformedHeader" xml:space="preserve">
+    <value>Malformed header.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PASSWORD_EXPIRED" xml:space="preserve">
+    <value>The account password has expired, as specified by the account settings.</value>
+  </data>
+  <data name="PPCRL_E_DOWNLOAD_FILE_FAILED" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) failed to download configuration or UI DLLs from the servers.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_SCHANNEL_ERROR" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) encountered a secure-channel failure when sending the request. Make sure that Secure Sockets Layer (SSL) is enabled in Internet Explorer.</value>
+  </data>
+  <data name="ArgumentExceptionMessage" xml:space="preserve">
+    <value>The '{0}' argument is invalid.</value>
+  </data>
+  <data name="MimeWriterInvalidStateForStartPreface" xml:space="preserve">
+    <value>MIME writer cannot start preface in '{0}' state.</value>
+  </data>
+  <data name="PPCRL_E_UNABLE_TO_INITIALIZE_CRYPTO_PROVIDER" xml:space="preserve">
+    <value>Unable to initialize crypto provider.</value>
+  </data>
+  <data name="PPCRL_REQUEST_S_IO_PENDING_NO_SLC" xml:space="preserve">
+    <value>The server is unable to return the requested SLC. The synchronous sign-in request was still made to the Microsoft account server.</value>
+  </data>
+  <data name="NotSupportedExpression" xml:space="preserve">
+    <value>The expression {0} is not supported.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_STRONG_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>The user cannot sign in until the password for the account is changed to a strong password.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_ACCOUNT_CONVERSION_NEEDED" xml:space="preserve">
+    <value>The user must go through the federation conversion flow. The error also contains a flow URL.</value>
+  </data>
+  <data name="FileAlreadyExists" xml:space="preserve">
+    <value>The file already exists.</value>
+  </data>
+  <data name="InvalidUsageOfConditionalScopeNowAllowedAction" xml:space="preserve">
+    <value>Incorrect usage of conditional scope. Some actions, such as setting a property or invoking a method, are not allowed inside a conditional scope.</value>
+  </data>
+  <data name="MimeWriterInvalidStateForContent" xml:space="preserve">
+    <value>MIME writer cannot write content in state '{0}'.</value>
+  </data>
+  <data name="MimeHeaderInvalidCharacter" xml:space="preserve">
+    <value>Character '{0}' (hexadecimal value 0x{1}) not valid in MIME header.</value>
+  </data>
+  <data name="MimeWriterInvalidStateForStartPart" xml:space="preserve">
+    <value>MIME writer cannot start new MIME part in state '{0}'.</value>
+  </data>
+  <data name="MimeReaderHeaderAlreadyExists" xml:space="preserve">
+    <value>'{0}' MIME header is specified multiple times.</value>
+  </data>
+  <data name="NotSameClientContext" xml:space="preserve">
+    <value>The object is used in the context different from the one associated with the object.</value>
+  </data>
+  <data name="PPCRL_E_CREDPROP_NOTFOUND" xml:space="preserve">
+    <value>The credential property cannot be found.</value>
+  </data>
+  <data name="NamedPropertyHasNotBeenInitialized" xml:space="preserve">
+    <value>The property or field '{0}' has not been initialized. It has not been requested or the request has not been executed. It may need to be explicitly requested.</value>
+  </data>
+  <data name="RequestUnknownResponse" xml:space="preserve">
+    <value>Unknown response from the server.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_FORCE_CHANGE_PASSWORD_REQUIRED" xml:space="preserve">
+    <value>The password for the user has expired; the user must change it before using any Microsoft account services.</value>
+  </data>
+  <data name="CannotHandleServerResponseSchema" xml:space="preserve">
+    <value>The server may use different version of schema and the client cannot process the server's response. The server's response schema is {0}.</value>
+  </data>
+  <data name="PPCRL_E_NO_LINKEDACCOUNTS" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) cannot find any linked accounts for that identity.</value>
+  </data>
+  <data name="ObjectNameProperty" xml:space="preserve">
+    <value>property {0}</value>
+  </data>
+  <data name="PPCRL_E_INVALID_RPS_TOKEN" xml:space="preserve">
+    <value>The RPS ticket is invalid.</value>
+  </data>
+  <data name="NonAllowedInUIThread" xml:space="preserve">
+    <value>The method or property that is called may block the UI thread and it is not allowed. Please use background thread to invoke the method or property, for example, using System.Threading.ThreadPool.QueueUserWorkItem method to invoke the method or property.</value>
+  </data>
+  <data name="JsonReachTheEndOfStream" xml:space="preserve">
+    <value>Unable to read data. The end of input stream is encountered.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_NEED_PIN" xml:space="preserve">
+    <value>A personal identification number (PIN) is required for sign-in.</value>
+  </data>
+  <data name="InvalidQueryExecution" xml:space="preserve">
+    <value>Invalid usage of query execution. The query should be executed by using ExecuteQuery method on the client context object.</value>
+  </data>
+  <data name="PPCRL_E_CALLER_NOT_SIGNED" xml:space="preserve">
+    <value>The calling application is not signed. The application must be signed with a Microsoft code-signing certificate.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_INVALID_TIME_RANGE" xml:space="preserve">
+    <value>The partner STS returned a wst:InvalidTimeRange error.</value>
+  </data>
+  <data name="RequestEmptyQueryName" xml:space="preserve">
+    <value>The property or query name is empty.</value>
+  </data>
+  <data name="CannotFindContextWebServerRelativeUrl" xml:space="preserve">
+    <value>Cannot find current web URL information on the page.</value>
+  </data>
+  <data name="PPCRL_E_AUTHBLOB_TOO_LARGE" xml:space="preserve">
+    <value>The authentication state information is too large.</value>
+  </data>
+  <data name="PropertyHasNotBeenInitialized" xml:space="preserve">
+    <value>The property or field has not been initialized. It has not been requested or the request has not been executed. It may need to be explicitly requested.</value>
+  </data>
+  <data name="PPCRL_E_EXTPROP_NOTFOUND" xml:space="preserve">
+    <value>The extended property does not exist on this computer.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_INVALID_CARDSPACE_TOKEN" xml:space="preserve">
+    <value>The Information Card is not valid.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_BAD_REQUEST" xml:space="preserve">
+    <value>The partner STS returned a wst:BadRequest error.</value>
+  </data>
+  <data name="PPCRL_S_TOKEN_TYPE_DOES_NOT_SUPPORT_SESSION_KEY" xml:space="preserve">
+    <value>The ticket returned does not have a session key.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PASSWORD_LOCKED_OUT_BAD_PASSWORD_OR_HIP" xml:space="preserve">
+    <value>The user account has been blocked due to an incorrect password or an incorrect response to a human-interaction proof (HIP) challenge.</value>
+  </data>
+  <data name="CannotGetCookie" xml:space="preserve">
+    <value>Cannot get cookie for URL '{0}'.</value>
+  </data>
+  <data name="RequestAbortedOrTimedOut" xml:space="preserve">
+    <value>The request was aborted or timed out.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_FLOWDISABLED" xml:space="preserve">
+    <value>The flow is disabled on the server.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_MISSING_HASHED_PASSWORD" xml:space="preserve">
+    <value>An offline sign-in was requested, but there is no hashed password. A hashed password must be created first by online sign-in. A hashed credential must be created first by performing a successful online sign-in with the LOGONIDENTITY_CREATE_OFFLINE_HASH flag set.</value>
+  </data>
+  <data name="WriteBufferOverflow" xml:space="preserve">
+    <value>An internal error has occurred. Overflow on MIME writer buffer.</value>
+  </data>
+  <data name="MimeContentLengthHeaderInvalid" xml:space="preserve">
+    <value>Invalid MIME content-length header encountered on read.</value>
+  </data>
+  <data name="InvalidIdcrlHeader" xml:space="preserve">
+    <value>The IDCRL response header from server '{0}' is not valid. The response header value is '{1}'. The response status code is '{2}'. All response headers are '{3}'.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_USER_NOT_LINKED" xml:space="preserve">
+    <value>The link account CID was not found.</value>
+  </data>
+  <data name="PPCRL_E_BUILD_CERT_REQUEST_FAILED" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) encountered an error while generating the certificate request. The problem could be a bad parameter, such as the key length being out of range.</value>
+  </data>
+  <data name="CannotContactSite" xml:space="preserve">
+    <value>Cannot contact site at the specified URL {0}.</value>
+  </data>
+  <data name="CollectionModified" xml:space="preserve">
+    <value>The collection was modified. Enumeration operation may not execute.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_EXPIRED_DATA" xml:space="preserve">
+    <value>The partner STS returned a wst:ExpiredData error.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_USER_CANCELED" xml:space="preserve">
+    <value>The user canceled authentication.</value>
+  </data>
+  <data name="PPCRL_E_NO_MEMBER_NAME_SET" xml:space="preserve">
+    <value>The sign-in name was not specified in the identity handle.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_NOT_FOUND" xml:space="preserve">
+    <value>The Application ID (AppID) for which the service ticket is requested does not exist on the system.</value>
+  </data>
+  <data name="PPCRL_E_CREDTARGETNAME_INVALID" xml:space="preserve">
+    <value>The credential target name is not valid.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_RSTR_MISSING_TOKENTYPE" xml:space="preserve">
+    <value>The response is bad and does not have a valid ticket type.</value>
+  </data>
+  <data name="JsonNotWellFormated" xml:space="preserve">
+    <value>Not well formatted JSON stream.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_INVALID_SERVICE_TIMESTAMP" xml:space="preserve">
+    <value>The Security Token Service (STS) returned the server time, so Identity Client Runtime Library (IDCRL) can adjust.</value>
+  </data>
+  <data name="PPCRL_E_CERTIFICATE_NOT_FOUND" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) cannot find a certificate for the identity.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_USER_FORGOT_PASSWORD" xml:space="preserve">
+    <value>The user clicked the Forgot password link and did not complete authentication.</value>
+  </data>
+  <data name="PPCRL_E_BUSY" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) is processing another API call. The application should try again later.</value>
+  </data>
+  <data name="UnknownError" xml:space="preserve">
+    <value>Unknown Error</value>
+  </data>
+  <data name="NoDirectHttpRequest" xml:space="preserve">
+    <value>Cannot invoke HTTP DAV request. There is a pending query.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_RSTR_FAULT" xml:space="preserve">
+    <value>The failed response contains a fault.</value>
+  </data>
+  <data name="MimeVersionHeaderInvalid" xml:space="preserve">
+    <value>Invalid mime-version header encountered on read.</value>
+  </data>
+  <data name="NotSupportedQueryExpressionWithExpressionDetail" xml:space="preserve">
+    <value>The query expression '{0}' is not supported.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_BAD_MEMBER_NAME_OR_PASSWORD" xml:space="preserve">
+    <value>The partner returned a bad sign-in name or password error. For more information, see Federation Error-handling Scenarios.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_NEED_STRONGPW" xml:space="preserve">
+    <value>The user password is not a strong password as required by the partner security settings.</value>
+  </data>
+  <data name="PPCRL_E_CERT_INVALID_ISSUER" xml:space="preserve">
+    <value>There were no certification authority (CA) certificates in the Identity Client Runtime Library (IDCRL) certificate store that matched the signature on the certificate.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PASSWORD_LOCKED_OUT" xml:space="preserve">
+    <value>The user account has been blocked.</value>
+  </data>
+  <data name="ObjectNameIdentity" xml:space="preserve">
+    <value>identity {0}</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_HAS_NO_ASYMMETRIC_KEY" xml:space="preserve">
+    <value>The Login server cannot issue the requested compact encrypted ticket because a Data Encryption Key (DEK) has not been uploaded to the site.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_SERVER_ERROR" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) encountered an error while talking to the partner STS.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_BAD_MEMBER_NAME_OR_PASSWORD_FED" xml:space="preserve">
+    <value>The sign-in name or password that was sent to the Microsoft account STS was not correct. There is an existing "e-mail as sign-in" (EASI) account with that sign-in name, but the password does not match. The user could be the EASI owner who entered a bad password, or it could be a new federated user with the same name. For more information, see Federation Error-handling Scenarios.</value>
+  </data>
+  <data name="PPCRL_E_CERT_INVALID_POP" xml:space="preserve">
+    <value>POP is not valid. The sender may not possess the private key for the certificate.</value>
+  </data>
+  <data name="PPCRL_E_AUTH_SERVICE_UNAVAILABLE" xml:space="preserve">
+    <value>Cannot connect to the authentication service.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_INVALID_SCOPE" xml:space="preserve">
+    <value>The partner STS returned a wst:InvalidScope error.</value>
+  </data>
+  <data name="PPCRL_AUTHSTATE_S_AUTHENTICATED_PARTNER" xml:space="preserve">
+    <value>The identity has been authenticated by means of an online sign-in with a partner ID.</value>
+  </data>
+  <data name="InvalidUsageOfConditionalScope" xml:space="preserve">
+    <value>Incorrect usage of conditional scope.</value>
+  </data>
+  <data name="PPCRL_E_RESPONSE_TOO_LARGE" xml:space="preserve">
+    <value>The response was too large.</value>
+  </data>
+  <data name="PPCRL_E_CALLBACK_REQUIRED" xml:space="preserve">
+    <value>The callback function is not set.</value>
+  </data>
+  <data name="PPCRL_S_NO_MORE_IDENTITIES" xml:space="preserve">
+    <value>An identity enumeration is finished.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_RSTR_MISSING_BASE64CERT" xml:space="preserve">
+    <value>The response contains a bad certificate, which cannot be base-64 decoded.</value>
+  </data>
+  <data name="QueryableResultNotAvailable" xml:space="preserve">
+    <value>The data is not available. The query may not have been executed.</value>
+  </data>
+  <data name="PPCRL_REQUEST_S_IO_PENDING" xml:space="preserve">
+    <value>In synchronous requests, a thread is waiting for a ticket from the server.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_EMAIL_VALIDATION_REQUIRED" xml:space="preserve">
+    <value>The user cannot sign in until the account's primary e-mail address has been validated.</value>
+  </data>
+  <data name="RequestUnexpectedResponseWithStatus" xml:space="preserve">
+    <value>Unexpected response from server. The status code of response is '{0}'. The status text of response is '{1}'.</value>
+  </data>
+  <data name="PPCRL_E_IDENTITY_NOT_AUTHENTICATED" xml:space="preserve">
+    <value>The account associated with the identity handle has not been authenticated.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_CERT_PARSE_ERROR" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) encountered an error while parsing the certificate block in the response.</value>
+  </data>
+  <data name="PPCRL_E_CERT_NOT_VALID_FOR_MINTTL" xml:space="preserve">
+    <value>The certificate time-to-live value is less than the the minimum time-to-live value.</value>
+  </data>
+  <data name="CannotFindPlatformLibrary" xml:space="preserve">
+    <value>Cannot find platform service library. For Windows Store application, please include Microsoft.SharePoint.Client.Runtime.WindowsStore.dll in the application package. For Windows Phone application, please include Microsoft.SharePoint.Client.Runtime.WindowsPhone.dll in the application package. For Windows application, please install Microsoft.SharePoint.Client.Runtime.Windows.dll in the GAC (Global Assembly Cache) or make it available for the Windows application.</value>
+  </data>
+  <data name="RequestHasBeenExecuted" xml:space="preserve">
+    <value>The request has been executed.</value>
+  </data>
+  <data name="PPCRL_E_UNABLE_TO_RETRIEVE_SERVICE_TOKEN" xml:space="preserve">
+    <value>The service ticket for the identity handle cannot be retrieved.</value>
+  </data>
+  <data name="PPCRL_AUTHSTATE_S_AUTHENTICATED_PASSWORD" xml:space="preserve">
+    <value>The identity has been authenticated by means of an online sign-in with a password.</value>
+  </data>
+  <data name="ArgumentNullExceptionMessage" xml:space="preserve">
+    <value>The '{0}' argument cannot be null.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_INVALID_PKCS10_KEYLEN" xml:space="preserve">
+    <value>The application provided an incorrect key length for the certificate request.</value>
+  </data>
+  <data name="RequestUnexpectedResponseWithContentTypeAndStatus" xml:space="preserve">
+    <value>Unexpected response from the server. The content type of the response is "{0}". The status code is "{1}".</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_FORCE_SIGNIN" xml:space="preserve">
+    <value>The authentication ticket has expired; reauthentication is required.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_AUTHENTICATION_BAD_ELEMENTS" xml:space="preserve">
+    <value>The partner STS returned a wst:AuthenticationBadElements error.</value>
+  </data>
+  <data name="RequestUnexpectedResponse" xml:space="preserve">
+    <value>Unexpected response from server.</value>
+  </data>
+  <data name="PPCRL_E_UNABLE_TO_RETRIEVE_CERT" xml:space="preserve">
+    <value>The client is unable to get the certificate from the server.</value>
+  </data>
+  <data name="PPCRL_E_INVALIDFLAGS" xml:space="preserve">
+    <value>One or more flags are not valid.</value>
+  </data>
+  <data name="PPCRL_E_IE_MISCONFIGURED" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) could not create an Internet Explorer object for SHA1 authentication.</value>
+  </data>
+  <data name="PPCRL_AUTHREQUIRED_E_PASSWORD" xml:space="preserve">
+    <value>A password is required for authentication.</value>
+  </data>
+  <data name="ETagNotMatch" xml:space="preserve">
+    <value>The External Content Type tag does not match the External Content Type tag of the file on the server.</value>
+  </data>
+  <data name="NamedServerObjectIsNull" xml:space="preserve">
+    <value>Object reference not set to an instance of an object on server. The object is associated with {0}.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_REQUEST_FAILED" xml:space="preserve">
+    <value>The partner STS returned a wst:RequestFailed error.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_AUTH_SERVER_ERROR" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) did not get a response from the Login server.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PENDING_NETWORK_REQUEST" xml:space="preserve">
+    <value>Cannot send a network request because the previous network request is still pending.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_AUTH_EXPIRED" xml:space="preserve">
+    <value>Authorization has expired.</value>
+  </data>
+  <data name="NoDirectRequest" xml:space="preserve">
+    <value>Cannot invoke request. There is a pending query.</value>
+  </data>
+  <data name="PPCRL_E_AUTHBLOB_INVALID" xml:space="preserve">
+    <value>The authentication state information is not valid.</value>
+  </data>
+  <data name="PPCRL_E_IDENTITY_NOCID" xml:space="preserve">
+    <value>The CID for a linked identity is not set.</value>
+  </data>
+  <data name="FormsAuthenticationCannotLogin" xml:space="preserve">
+    <value>The user's login name or password is not valid.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_NEED_CERTIFICATE" xml:space="preserve">
+    <value>The partner must have a certificate to sign in.</value>
+  </data>
+  <data name="PPCRL_E_NO_CERTSTORE_FOR_ISSUERS" xml:space="preserve">
+    <value>There were no CA certificates in the Identity Client Runtime Library (IDCRL) certificate store.</value>
+  </data>
+  <data name="PPCRL_S_NO_AUTHENTICATION_REQUIRED" xml:space="preserve">
+    <value>The user is already authenticated.</value>
+  </data>
+  <data name="UnknownResponseData" xml:space="preserve">
+    <value>Unexpected response data from server.</value>
+  </data>
+  <data name="NoObjectPathAssociatedWithObject" xml:space="preserve">
+    <value>The object is not associated with an object identity or the object identity is invalid.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_HIP_ON_FIRST_LOGIN" xml:space="preserve">
+    <value>The user must solve a HIP challenge before signing in.</value>
+  </data>
+  <data name="PPCRL_E_ILLEGAL_LOGONIDENTITY_FLAG" xml:space="preserve">
+    <value>The LogonIdentityEx Method has an invalid flag.</value>
+  </data>
+  <data name="JsonDataTypeNotMatch" xml:space="preserve">
+    <value>The type of data at position {0} is different than the one expected.</value>
+  </data>
+  <data name="MimeWriterInvalidStateForClose" xml:space="preserve">
+    <value>Cannot call Close on MIME writer in state '{0}'.</value>
+  </data>
+  <data name="PPCRL_REQUEST_S_OK_NO_SLC" xml:space="preserve">
+    <value>The server is unable to return the requested short-lived certificate (SLC). The asynchronous sign-in request was still made to the Microsoft account server.</value>
+  </data>
+  <data name="PPCRL_E_CERT_CA_ROLLOVER" xml:space="preserve">
+    <value>An old certificate was used; a new certificate should be requested. Returned when the Certification Authority (CA) that issued the certificate is no longer valid.</value>
+  </data>
+  <data name="PPCRL_AUTHSTATE_E_UNAUTHENTICATED" xml:space="preserve">
+    <value>The identity has not been authenticated.</value>
+  </data>
+  <data name="PPCRL_E_OFFLINE_AUTH" xml:space="preserve">
+    <value>There was a problem with offline sign-in.</value>
+  </data>
+  <data name="MtomBufferQuotaExceeded" xml:space="preserve">
+    <value>The maximum buffer size ({0}) has been exceeded while reading MTOM data. This quota may be increased by changing the maxBufferSize setting used when creating the MTOM reader.</value>
+  </data>
+  <data name="PPCRL_AUTHREQUIRED_E_UNKNOWN" xml:space="preserve">
+    <value>Cannot find a required service ticket.</value>
+  </data>
+  <data name="PPCRL_E_INVALID_AUTH_SERVICE_RESPONSE" xml:space="preserve">
+    <value>The server returned a response that was not valid.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_NO_NETWORK" xml:space="preserve">
+    <value>The client was unable to connect to the network.</value>
+  </data>
+  <data name="PPCRL_E_USER_NOTFOUND" xml:space="preserve">
+    <value>The sign-in name is not persisted.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_DUPLICATE_SERVICETARGET" xml:space="preserve">
+    <value>One or more RSTParams structures had duplicate service names. No network call was made.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_CANCELLED" xml:space="preserve">
+    <value>The request was canceled by the application by means of a call to the CancelPendingRequest Method.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_RENEW_NEEDED" xml:space="preserve">
+    <value>The partner STS returned a wst:RenewNeeded error.</value>
+  </data>
+  <data name="InvalidUsageOfExceptionHandlingScope" xml:space="preserve">
+    <value>Incorrect usage of exception handling scope.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_INVALID_PKCS10_TIMESTAMP" xml:space="preserve">
+    <value>The PKCS10 certificate time stamp was invalid.</value>
+  </data>
+  <data name="MimeContentTypeHeaderInvalid" xml:space="preserve">
+    <value>Invalid MIME content-type header encountered on read.</value>
+  </data>
+  <data name="NotSupportedMemberInExpression" xml:space="preserve">
+    <value>The '{0}' member cannot be used in the expression.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_BAD_MEMBER_NAME_OR_PASSWORD" xml:space="preserve">
+    <value>The sign-in name or password does not match one in the Microsoft account system.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_NEED_STRONGPW_EXPIRY" xml:space="preserve">
+    <value>The password settings are not correct because they require a strong password that expires.</value>
+  </data>
+  <data name="PPCRL_E_REALM_LOOKUP" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) could not look up the realm information for a federated sign-in.</value>
+  </data>
+  <data name="PPCRL_S_NO_SUCH_CREDENTIAL" xml:space="preserve">
+    <value>There is no cached data available for the user.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_UNKNOWN" xml:space="preserve">
+    <value>Unable to get ticket due to unknown error.</value>
+  </data>
+  <data name="NotSupportedQueryExpression" xml:space="preserve">
+    <value>The query expression is not supported.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_MISSING_PRIMARY_CREDENTIAL" xml:space="preserve">
+    <value>The password is missing.</value>
+  </data>
+  <data name="PPCRL_AUTHSTATE_S_AUTHENTICATED_OFFLINE" xml:space="preserve">
+    <value>The identity has been authenticated by means of an offline sign-in from hashed credentials.</value>
+  </data>
+  <data name="PPCRL_E_INVALID_URL" xml:space="preserve">
+    <value>The URL is not valid.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_UNABLE_TO_RENEW" xml:space="preserve">
+    <value>The partner STS returned a wst:UnableToRenew error.</value>
+  </data>
+  <data name="CannotContactSiteWithDetails" xml:space="preserve">
+    <value>Cannot contact site at the specified URL {0}. {1}</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_INVALID_MEMBER_NAME" xml:space="preserve">
+    <value>The user ID is not formatted correctly to correspond to a Microsoft account.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_INVALID_REQUEST" xml:space="preserve">
+    <value>The partner Security Token Service (STS) returned a wst:InvalidRequest error.</value>
+  </data>
+  <data name="PPCRL_E_AUTHBLOB_NOT_FOUND" xml:space="preserve">
+    <value>Either the identity is empty or the identity does not have the password persisted.</value>
+  </data>
+  <data name="ObjectNameMethod" xml:space="preserve">
+    <value>method {0}</value>
+  </data>
+  <data name="MimeMessageGetContentStreamCalledAlready" xml:space="preserve">
+    <value>Content stream can be retrieved from MIME message only once.</value>
+  </data>
+  <data name="PPCRL_E_SIGCHECK_FAILED" xml:space="preserve">
+    <value>The signature on Ppcrlconfig.dll or Ppcrlui.dll cannot be verified.</value>
+  </data>
+  <data name="CollectionHasNotBeenInitialized" xml:space="preserve">
+    <value>The collection has not been initialized. It has not been requested or the request has not been executed. It may need to be explicitly requested.</value>
+  </data>
+  <data name="PPCRL_E_SIGN_POP_FAILED" xml:space="preserve">
+    <value>The POP message could not be signed.</value>
+  </data>
+  <data name="PPCRL_E_NOT_UI_ERROR" xml:space="preserve">
+    <value>The error can't be handled by UI; call the GetAuthState Method to get the exact error code.</value>
+  </data>
+  <data name="PPCRL_S_OK_CLIENTTIME" xml:space="preserve">
+    <value>The client time skew is not set.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_FORCE_CHANGE_SQSA" xml:space="preserve">
+    <value>The user must change the secret question and answer.</value>
+  </data>
+  <data name="PPCRL_E_MISSING_FILE" xml:space="preserve">
+    <value>The Idcrl.config file is missing and client cannot download a new one from the server.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PROFILE_ACCRUE_REQUIRED" xml:space="preserve">
+    <value>The user has yet to provide the profile information that is required before begin signed in to the service.</value>
+  </data>
+  <data name="MtomExceededMaxSizeInBytes" xml:space="preserve">
+    <value>The 'maximum size in bytes' quota ({0}) has been exceeded while writing MTOM data. This quota may be increased by changing the maxSizeInBytes setting used when creating the MTOM writer.</value>
+  </data>
+  <data name="NotSupportedQueryExpressionWithExpressionValue" xml:space="preserve">
+    <value>The query expression '{0}' is not supported.</value>
+  </data>
+  <data name="PPCRL_E_FORBIDDEN_NAMESPACE" xml:space="preserve">
+    <value>The sign-in name belongs to a forbidden namespace and will not be authenticated.</value>
+  </data>
+  <data name="PPCRL_E_NO_LINKEDHANDLE" xml:space="preserve">
+    <value>Identity Client Runtime Library (IDCRL) could not find a linked identity handle.</value>
+  </data>
+  <data name="PPCRL_E_INVALID_RSTPARAMS" xml:space="preserve">
+    <value>An RSTParams structure field value is not valid.</value>
+  </data>
+  <data name="ServerNotInFormsAuthenticationMode" xml:space="preserve">
+    <value>The server does not use forms authentication.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_PARTNER_LOGIN" xml:space="preserve">
+    <value>This account must be authenticated with a federated partner. The user submitted a sign-in name in a managed domain that the Microsoft account STS cannot authenticate. If the LOGONIDENTITY_AUTO_PARTNER_REDIRECT LOGON_FLAG enumeration flag was set in the LogonIdentityEx Method method call, Identity Client Runtime Library (IDCRL) automatically resubmits the request to the federated partner's STS. Otherwise, your application should obtain the user's consent and call LogonIdentityEx again with the LOGONIDENTITY_FEDERATED LOGON_FLAG enumeration flag set.</value>
+  </data>
+  <data name="MimeReaderTruncated" xml:space="preserve">
+    <value>Unexpected end of file.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_INVALID_POLICY" xml:space="preserve">
+    <value>The policy submitted in the authentication request was not valid.</value>
+  </data>
+  <data name="PPCRL_REQUEST_E_INVALID_PKCS10" xml:space="preserve">
+    <value>The PKCS10 certificate request was invalid.</value>
+  </data>
+  <data name="MissedFormsAuthLoginInfo" xml:space="preserve">
+    <value>You must set the forms authentication login information on the context.</value>
+  </data>
+</root>

@@ -1,0 +1,4 @@
+C:\UWP\DWP\Office365Search\Office365Search.Core\Office365Search.Core.csproj;x64
+C:\UWP\DWP\Office365Search\Office365Search.Core\Office365Search.Core.csproj;x64
+C:\UWP\DWP\Office365Search\Office365Search.Services.Background\Office365Search.Services.Background.csproj;x64
+C:\UWP\DWP\Office365Search\Office365Search\Office365Search.csproj;x64

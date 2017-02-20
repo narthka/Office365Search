@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-US" Name="OfficePointCommandSet_en-us">
+    <AppName>Search</AppName>
+    <Example>Search Content from SharePoint Sites</Example>
+
+
+    <Command Name="SPSearchContentCommand">
+      <Example> Search SharePoint "SearchText"</Example>
+      <ListenFor RequireAppName="ExplicitlySpecified">{builtin:AppName} in {searchsite} [for] {dictatedSearchText}</ListenFor>
+      <ListenFor RequireAppName="BeforeOrAfterPhrase">{dictatedSearchText} in {searchsite}</ListenFor>
+      <Feedback> Searching {dictatedSearchText}</Feedback>
+      <VoiceCommandService Target="GeneralQueryVoiceCommandService"/>
+    </Command>
+
+
+    <Command Name="SharePointWhatsCheckedOutQueryCommand">
+      <Example> What's checked out to me </Example>
+      <ListenFor>what's checked out to me </ListenFor>
+      <ListenFor>checked out documents to me </ListenFor>
+      <Feedback> Finding documents checked out to you</Feedback>
+      <VoiceCommandService Target="GeneralQueryVoiceCommandService"/>
+    </Command>
+    
+
+    <PhraseList Label="searchsite">
+      <Item>Sharepoint</Item>
+      <Item>insideemc</Item>
+      <Item>polaris</Item>
+      <Item>Google</Item>
+      <Item>Bing</Item>
+    </PhraseList>
+    
+    <PhraseTopic Label="dictatedSearchText" Scenario="Dictation">
+    </PhraseTopic>
+
+  </CommandSet>
+</VoiceCommands>
+

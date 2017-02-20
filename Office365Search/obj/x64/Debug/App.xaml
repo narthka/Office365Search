@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="Office365Search.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Office365Search"
+    RequestedTheme="Light">
+    <Application.Resources>
+        <x:String x:Key="ida:ClientId">5535c865-e37e-4dc0-8cc4-726a14feb437</x:String>
+        <x:String x:Key="ida:AADInstance">https://login.microsoftonline.com/</x:String>
+        <x:String x:Key="ida:Domain">kamat777.onmicrosoft.com</x:String>
+    </Application.Resources>
+
+</Application>
+
