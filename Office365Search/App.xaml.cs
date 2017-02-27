@@ -38,8 +38,33 @@ namespace Office365Search
 
         protected override void OnActivated(IActivatedEventArgs args)
         {
-            base.OnActivated(args);
+            if (args.Kind == ActivationKind.Protocol)
+            {
+                var commandArgs = args as ProtocolActivatedEventArgs;
+                Windows.Foundation.WwwFormUrlDecoder decoder =
+                  new Windows.Foundation.WwwFormUrlDecoder(commandArgs.Uri.Query);
+                var destination = decoder.GetFirstValueByName("LaunchContext");
+
+                string uriToLaunch = destination;
+                var uri = new Uri(uriToLaunch);
+
+                var success = Windows.System.Launcher.LaunchUriAsync(uri);
+
+                Application.Current.Exit();
+
+                // this.Suspending += OnSuspending;
+
+            }
+
+          //  base.OnActivated(args);
+
+
+
         }
+
+
+
+
 
         /// <summary>
         /// Invoked when the application is launched normally by the end user.  Other entry points

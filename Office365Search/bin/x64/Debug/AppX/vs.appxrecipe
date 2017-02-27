@@ -16,7 +16,7 @@
     <PackageRegistrationPath>
     </PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
-    <RegisteredManifestChecksum>9C516EE5D301AF98D0F9085DFDF4ACD9E9BC5942CC77E4FA297357C34C6A10FE</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>5FD9A13D46E27F77915C73E692AECF5C773C730C30D40F1FD0D24AE5666B954A</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>d8a8334d-3486-4a47-964a-2ec67fa78e3b_1.0.0.0_x64__zsmhv60aymz52</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>d8a8334d-3486-4a47-964a-2ec67fa78e3b_zsmhv60aymz52!App</RegisteredUserModeAppID>
     <RegisteredPackageID>d8a8334d-3486-4a47-964a-2ec67fa78e3b</RegisteredPackageID>
@@ -28,13 +28,13 @@
     <AppXManifest Include="C:\UWP\DWP\Office365Search\Office365Search\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-20T17:41:59.527</Modified>
+      <Modified>2017-02-27T17:26:33.784</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\bin\x64\Debug\Office365Search.exe">
       <PackagePath>entrypoint\Office365Search.exe</PackagePath>
-      <Modified>2017-02-20T17:41:55.362</Modified>
+      <Modified>2017-02-27T17:26:32.474</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kamatn2\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -682,7 +682,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Core\bin\x64\Debug\Office365Search.Core.dll">
       <PackagePath>Office365Search.Core.dll</PackagePath>
-      <Modified>2017-02-20T17:32:08.192</Modified>
+      <Modified>2017-02-27T17:15:18.336</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kamatn2\.nuget\packages\Microsoft.IdentityModel.Clients.ActiveDirectory\2.14.201151115\lib\netcore45\Microsoft.IdentityModel.Clients.ActiveDirectory.winmd">
       <PackagePath>Microsoft.IdentityModel.Clients.ActiveDirectory.winmd</PackagePath>
@@ -690,7 +690,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\bin\x64\Debug\Office365Search.Services.Background.winmd">
       <PackagePath>Office365Search.Services.Background.winmd</PackagePath>
-      <Modified>2017-02-20T17:41:53.573</Modified>
+      <Modified>2017-02-27T17:21:38.875</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
@@ -698,7 +698,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\SharePointSearchVoiceCommands.xml">
       <PackagePath>SharePointSearchVoiceCommands.xml</PackagePath>
-      <Modified>2017-02-20T16:17:17.109</Modified>
+      <Modified>2017-02-21T14:09:56.529</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -734,6 +734,22 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-09-20T12:00:08.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICDOCX.PNG">
+      <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICDOCX.PNG</PackagePath>
+      <Modified>2016-12-05T14:30:12.374</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICGEN.png">
+      <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICGEN.png</PackagePath>
+      <Modified>2016-12-05T14:30:12.384</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICPPTX.PNG">
+      <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICPPTX.PNG</PackagePath>
+      <Modified>2016-12-05T14:30:12.393</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICXLSX.PNG">
+      <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICXLSX.PNG</PackagePath>
+      <Modified>2016-12-05T14:30:12.402</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\bin\x64\Debug\Office365Search.xr.xml">
       <PackagePath>Office365Search.xr.xml</PackagePath>
       <Modified>2017-02-18T14:39:43.820</Modified>
@@ -745,11 +761,11 @@
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-02-20T17:01:01.353</Modified>
+      <Modified>2017-02-21T14:08:27.526</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\bin\x64\Debug\Core\Office365Search.exe">
       <PackagePath>Office365Search.exe</PackagePath>
-      <Modified>2017-02-20T17:41:59.505</Modified>
+      <Modified>2017-02-27T17:26:33.762</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

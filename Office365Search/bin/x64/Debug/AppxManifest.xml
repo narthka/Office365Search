@@ -42,15 +42,15 @@
       <InProcessServer>
         <Path>CLRHost.dll</Path>
         <ActivatableClass ActivatableClassId="Office365Search.Services.Background.GeneralQueryVoiceCommandService" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationParameters" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserCredential" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserAssertion" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AdalTrace" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationContext" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.AuthenticationResult" ThreadingModel="both" />
         <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCacheNotificationArgs" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserAssertion" ThreadingModel="both" />
-        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserIdentifier" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.TokenCache" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.IdentityModel.Clients.ActiveDirectory.UserCredential" ThreadingModel="both" />
       </InProcessServer>
     </Extension>
   </Extensions>

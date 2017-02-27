@@ -9,7 +9,7 @@
     <Command Name="SPSearchContentCommand">
       <Example> Search SharePoint "SearchText"</Example>
       <ListenFor RequireAppName="ExplicitlySpecified">{builtin:AppName} in {searchsite} [for] {dictatedSearchText}</ListenFor>
-      <ListenFor RequireAppName="BeforeOrAfterPhrase">{dictatedSearchText} in {searchsite}</ListenFor>
+      <ListenFor>{dictatedSearchText} in {searchsite}</ListenFor>
       <Feedback> Searching {dictatedSearchText}</Feedback>
       <VoiceCommandService Target="GeneralQueryVoiceCommandService"/>
     </Command>

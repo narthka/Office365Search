@@ -90,9 +90,16 @@ namespace Office365Search.Core.Helpers
                 document.Title = item.Element(d + "Cells").Descendants(d + "Key").First(a => a.Value == "Title").Parent.Element(d + "Value").Value;
                 // document.AuthorInformation.DisplayName = item.Element(d + "Cells").Descendants(d + "Key").First(a => a.Value == "Author").Parent.Element(d + "Value").Value;
                 document.Url = item.Element(d + "Cells").Descendants(d + "Key").First(a => a.Value == "Path").Parent.Element(d + "Value").Value;
-
                 DateTime modifiedDate = Convert.ToDateTime(item.Element(d + "Cells").Descendants(d + "Key").First(a => a.Value == "LastModifiedTime").Parent.Element(d + "Value").Value);
                 document.ModifiedDate= modifiedDate;
+
+                string docExtension = item.Element(d + "Cells").Descendants(d + "Key").First(a => a.Value == "FileExtension").Parent.Element(d + "Value").Value;
+                document.IconUrl = docExtension.ToFileIconUrl();
+
+                string originalpath = item.Element(d + "Cells").Descendants(d + "Key").First(a => a.Value == "OriginalPath").Parent.Element(d + "Value").Value;
+                document.Url = originalpath;
+
+
 
                 documents.Add(document);
             }

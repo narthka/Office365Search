@@ -120,6 +120,12 @@
   <ItemGroup>
     <Folder Include="Helpers\" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\fileicons\256_ICDOCX.PNG" />
+    <Content Include="images\fileicons\256_ICGEN.png" />
+    <Content Include="images\fileicons\256_ICPPTX.PNG" />
+    <Content Include="images\fileicons\256_ICXLSX.PNG" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

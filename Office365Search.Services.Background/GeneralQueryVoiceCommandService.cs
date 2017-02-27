@@ -119,10 +119,12 @@ namespace Office365Search.Services.Background
 
                     try
                     {
-                        //destinationTile.ContentTileType = VoiceCommandContentTileType.TitleWith68x68IconAndText;
-                        // destinationTile.Image = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///OfficePoint.Services.Background" + document.IconUrl.EnsureStartsWith("/")));
+                        destinationTile.ContentTileType = VoiceCommandContentTileType.TitleWith68x68IconAndText;
+                        destinationTile.Image = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Office365Search.Services.Background" + document.IconUrl.EnsureStartsWith("/")));
                         // destinationTile.AppContext = document;
                         // destinationTile.AppLaunchArgument = "type=" + "SharePointWhatsCheckedOutQueryCommand" + "&itemId=" + document.ItemId.ToString();
+
+                        destinationTile.AppLaunchArgument = "https://www.google.com";
 
                         destinationTile.Title = document.Title;
                         destinationTile.TextLine1 = "Last modified: " + document.ModifiedDate.ToString();
@@ -177,21 +179,24 @@ namespace Office365Search.Services.Background
 
             if (documents.Count > 0)
             {
-                foreach (var document in documents.OrderByDescending(d=>d.ModifiedDate))
+                foreach (var document in documents.OrderByDescending(d => d.ModifiedDate))
                 {
                     var destinationTile = new VoiceCommandContentTile();
 
                     try
                     {
-                        destinationTile.ContentTileType = VoiceCommandContentTileType.TitleWithText;
-                        // destinationTile.Image = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///OfficePoint.Services.Background" + document.IconUrl.EnsureStartsWith("/")));
-                        // destinationTile.AppContext = document;
+                        destinationTile.ContentTileType = VoiceCommandContentTileType.TitleWith68x68IconAndText;
+                        destinationTile.Image = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Office365Search.Services.Background" + document.IconUrl.EnsureStartsWith("/")));
                         // destinationTile.AppLaunchArgument = "type=" + "SharePointWhatsCheckedOutQueryCommand" + "&itemId=" + document.ItemId.ToString();
+
+                        destinationTile.AppLaunchArgument = document.Url;
                         destinationTile.Title = document.Title;
                         destinationTile.TextLine1 = "Last modified: " + document.ModifiedDate.ToString();
+                        // destinationTile.TextLine2 = "test";
                         //  destinationTile.TextLine1 = document.AuthorInformation.DisplayName;
                         // destinationTile.TextLine1 = "modified: " + document;
                         // destinationTile.TextLine2 = "views: " + document.ViewCount;
+                        destinationTile.AppContext = document;
 
                         destinationsContentTiles.Add(destinationTile);
                     }
@@ -209,7 +214,28 @@ namespace Office365Search.Services.Background
 
                 }, destinationsContentTiles);
 
-                await voiceServiceConnection.ReportSuccessAsync(response);
+                 await voiceServiceConnection.ReportSuccessAsync(response);
+
+                //new code goes here
+                //try
+                //{
+
+                //    var voiceCommandDisambiguationResult = await voiceServiceConnection.RequestDisambiguationAsync(response);
+                //    if (voiceCommandDisambiguationResult != null)
+                //    {
+                //        DocumentInformation selectedDocument = (DocumentInformation)voiceCommandDisambiguationResult.SelectedItem.AppContext;
+                //    }
+                //}
+                //catch (Exception ex)
+                //{
+
+                //}
+                //new code ends
+
+
+
+
+
             }
             else
             {
@@ -305,123 +331,6 @@ namespace Office365Search.Services.Background
             var response = VoiceCommandResponse.CreateResponse(userMessage);
             response.AppLaunchArgument = "";
             await voiceServiceConnection.ReportSuccessAsync(response);
-
-
-
-
-            //List<SearchItem> SharePointList = new List<SearchItem>();
-            //var sharePointCredentials = Core.Helpers.SettingsHelper.GetSharePointCredentials();
-
-            //if (sharePointCredentials != null)
-            //{
-            //    string url = sharePointCredentials.RootSiteUrl;
-            //    using (ClientContext clientContext = new ClientContext(url))
-            //    {
-            //        clientContext.Credentials = new SharePointOnlineCredentials(sharePointCredentials.UserName, sharePointCredentials.Password);
-            //        clientContext.AuthenticationMode = ClientAuthenticationMode.Default;
-
-            //        List announcementsList = clientContext.Web.Lists.GetByTitle("Announcements");
-
-            //        CamlQuery query = CamlQuery.CreateAllItemsQuery(100);
-            //        ListItemCollection items = announcementsList.GetItems(query);
-
-
-
-
-            //        // Web web = clientContext.Web;
-            //        // clientContext.Load(web);
-            //        clientContext.Load(items);
-            //        var webTask = clientContext.ExecuteQueryAsync();
-
-            //        webTask.Wait();
-
-
-            //        foreach (ListItem listItem in items)
-            //        {
-            //            SharePointList.Add(new SearchItem() { Title = listItem["Title"].ToString(), URL = "" });
-            //            // SharePointList.Add(listItem["Title"].ToString());
-            //        }
-
-            //    }
-
-
-            //}
-
-
-            //IEnumerable<SearchItem> searchresults = SharePointList.Where(s => s.Title.ToLower() == searchText.ToLower()).ToList();
-
-            //var userMessage = new VoiceCommandUserMessage();
-            //var searchResultContentTiles = new List<VoiceCommandContentTile>();
-
-            //if (searchresults.Count() == 0)
-            //{
-            //    // In this scenario, perhaps someone has modified data on your service outside of your 
-            //    // control. If you're accessing a remote service, having a background task that
-            //    // periodically refreshes the phrase list so it's likely to be in sync is ideal.
-            //    // This is unlikely to occur for this sample app, however.
-            //    string foundNosearchResults = "No Results found for search keyword " + searchText;
-            //    userMessage.DisplayMessage = foundNosearchResults;
-            //    userMessage.SpokenMessage = foundNosearchResults;
-            //}
-
-            //else
-            //{
-            //    // Set a title message for the page.
-            //    string message = "";
-            //    if (searchresults.Count() > 1)
-            //    {
-            //        message = searchresults.Count() + " Results found that match " + searchText;
-            //    }
-            //    else
-            //    {
-            //        message = "One Result found that match " + searchText;
-            //    }
-            //    userMessage.DisplayMessage = message;
-            //    userMessage.SpokenMessage = message;
-
-            //    // file in tiles for each destination, to display information about the trips without
-            //    // launching the app.
-            //    foreach (SearchItem item in searchresults)
-            //    {
-            //        int i = 1;
-
-            //        var searchResultContentTile = new VoiceCommandContentTile();
-
-            //        // To handle UI scaling, Cortana automatically looks up files with FileName.scale-<n>.ext formats based on the requested filename.
-            //        // See the VoiceCommandService\Images folder for an example.
-            //        // searchResultContentTile.ContentTileType = VoiceCommandContentTileType.TitleWith68x68IconAndText;
-            //        //searchResultContentTile.Image = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///AdventureWorks.VoiceCommands/Images/GreyTile.png"));
-
-            //        searchResultContentTile.AppLaunchArgument = item.URL;
-            //        searchResultContentTile.Title = item.Title;
-            //        //if (trip.StartDate != null)
-            //        //{
-            //        //    destinationTile.TextLine1 = trip.StartDate.Value.ToString(dateFormatInfo.LongDatePattern);
-            //        //}
-            //        //else
-            //        //{
-            //        //    destinationTile.TextLine1 = trip.Destination + " " + i;
-            //        //}
-
-            //        searchResultContentTiles.Add(searchResultContentTile);
-            //        i++;
-            //    }
-
-
-            //}
-
-
-            //var response = VoiceCommandResponse.CreateResponse(userMessage, searchResultContentTiles);
-
-            //if (searchresults.Count() > 0)
-            //{
-            //    response.AppLaunchArgument = "";
-            //}
-
-            //await voiceServiceConnection.ReportSuccessAsync(response);
-
-
-
 
         }
 

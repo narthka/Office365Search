@@ -550,6 +550,18 @@
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICDOCX.PNG">
+      <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICDOCX.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICGEN.png">
+      <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICGEN.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICPPTX.PNG">
+      <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICPPTX.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICXLSX.PNG">
+      <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICXLSX.PNG</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\bin\x64\Debug\Office365Search.xr.xml">
       <PackagePath>Office365Search.xr.xml</PackagePath>
     </AppxPackagedFile>
