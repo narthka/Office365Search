@@ -517,21 +517,19 @@
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\bin\x64\Debug\Office365Search.Services.Background.winmd">
       <PackagePath>Office365Search.Services.Background.winmd</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\SharePointSearchVoiceCommands.xml">
-      <PackagePath>SharePointSearchVoiceCommands.xml</PackagePath>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Assets\Square150x150Logo.png">
+      <PackagePath>Assets\Square150x150Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Assets\Square150x150Logo.scale-200.png">
-      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Assets\Square44x44Logo.scale-200.png">
@@ -561,6 +559,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search.Services.Background\images\fileicons\256_ICXLSX.PNG">
       <PackagePath>Office365Search.Services.Background\images\fileicons\256_ICXLSX.PNG</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\SharePointSearchVoiceCommands.xml">
+      <PackagePath>SharePointSearchVoiceCommands.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\UWP\DWP\Office365Search\Office365Search\bin\x64\Debug\Office365Search.xr.xml">
       <PackagePath>Office365Search.xr.xml</PackagePath>

@@ -117,7 +117,7 @@ namespace Office365Search.Core.Helpers
 
             WebAccountProvider aadAccount = await WebAuthenticationCoreManager.FindAccountProviderAsync("https://login.windows.net");
             // WebTokenRequest request = new WebTokenRequest(aadAccount, string.Empty, App.Current.Resources["ida:ClientId"].ToString(), WebTokenRequestPromptType.Default);
-            WebTokenRequest request = new WebTokenRequest(aadAccount, string.Empty, "5535c865-e37e-4dc0-8cc4-726a14feb437", WebTokenRequestPromptType.Default);
+            WebTokenRequest request = new WebTokenRequest(aadAccount, string.Empty, "48d16164-a3b3-4ab1-b626-a5271858fdac", WebTokenRequestPromptType.Default);
             request.Properties.Add("authority", "https://login.windows.net");
             request.Properties.Add("resource", resource);
 
@@ -130,11 +130,12 @@ namespace Office365Search.Core.Helpers
             else if (response.ResponseStatus == WebTokenRequestStatus.UserInteractionRequired)
             {
                 aadAccount = await WebAuthenticationCoreManager.FindAccountProviderAsync("https://login.windows.net");
-                request = new WebTokenRequest(aadAccount, string.Empty, "5535c865-e37e-4dc0-8cc4-726a14feb437", WebTokenRequestPromptType.ForceAuthentication);
+                request = new WebTokenRequest(aadAccount, string.Empty, "48d16164-a3b3-4ab1-b626-a5271858fdac", WebTokenRequestPromptType.ForceAuthentication);
                 request.Properties.Add("authority", "https://login.windows.net");
                 request.Properties.Add("resource", resource);
 
                 response = await WebAuthenticationCoreManager.RequestTokenAsync(request);
+
                 if (response.ResponseStatus == WebTokenRequestStatus.Success)
                 {
                     WebTokenResponse webToken = response.ResponseData[0];

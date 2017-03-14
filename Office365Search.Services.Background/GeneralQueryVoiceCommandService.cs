@@ -121,16 +121,16 @@ namespace Office365Search.Services.Background
                     {
                         destinationTile.ContentTileType = VoiceCommandContentTileType.TitleWith68x68IconAndText;
                         destinationTile.Image = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Office365Search.Services.Background" + document.IconUrl.EnsureStartsWith("/")));
-                        // destinationTile.AppContext = document;
                         // destinationTile.AppLaunchArgument = "type=" + "SharePointWhatsCheckedOutQueryCommand" + "&itemId=" + document.ItemId.ToString();
 
-                        destinationTile.AppLaunchArgument = "https://www.google.com";
-
+                        destinationTile.AppLaunchArgument = document.Url;
                         destinationTile.Title = document.Title;
                         destinationTile.TextLine1 = "Last modified: " + document.ModifiedDate.ToString();
+                        // destinationTile.TextLine2 = "test";
                         //  destinationTile.TextLine1 = document.AuthorInformation.DisplayName;
                         // destinationTile.TextLine1 = "modified: " + document;
                         // destinationTile.TextLine2 = "views: " + document.ViewCount;
+                        destinationTile.AppContext = document;
 
 
                         destinationsContentTiles.Add(destinationTile);
@@ -142,14 +142,48 @@ namespace Office365Search.Services.Background
                 }
 
                 await ShowProgressScreen("I found " + documents.Count + " documents...");
-                response = VoiceCommandResponse.CreateResponse(new VoiceCommandUserMessage()
+
+                var userPrompt = new VoiceCommandUserMessage();
+                userPrompt.DisplayMessage = userPrompt.SpokenMessage = "Which document you want to open?";
+
+                var userReprompt = new VoiceCommandUserMessage();
+                userReprompt.DisplayMessage = userReprompt.SpokenMessage = "Please suggest, Which document you want to open?";
+
+                response = VoiceCommandResponse.CreateResponseForPrompt(userPrompt, userReprompt, destinationsContentTiles);
+                // await voiceServiceConnection.ReportSuccessAsync(response);
+                try
                 {
-                    DisplayMessage = "Here are your checked out documents",
-                    SpokenMessage = "Here are your top " + destinationsContentTiles.Count + " checked out documents"
+                    var voiceCommandDisambiguationResult = await voiceServiceConnection.RequestDisambiguationAsync(response);
+                    if (voiceCommandDisambiguationResult != null && voiceCommandDisambiguationResult.SelectedItem != null)
+                    {
+                        string uriToLaunch = voiceCommandDisambiguationResult.SelectedItem.AppLaunchArgument;
+                        var uri = new Uri(uriToLaunch);
+                        //  var success = Windows.System.Launcher.LaunchUriAsync(uri);
 
-                }, destinationsContentTiles);
+                        var userMessage = new VoiceCommandUserMessage();
+                        userMessage.DisplayMessage = "Opening the Document.";
+                        userMessage.SpokenMessage = "Opening the Document.";
 
-                await voiceServiceConnection.ReportSuccessAsync(response);
+                        response = VoiceCommandResponse.CreateResponse(userMessage);
+                        response.AppLaunchArgument = uri.ToString();
+
+                        await voiceServiceConnection.RequestAppLaunchAsync(response);
+
+                        //var userConfirmMessage = new VoiceCommandUserMessage();
+                        //userConfirmMessage.DisplayMessage = userConfirmMessage.SpokenMessage = "Requested Document Opened. Thank you!";
+
+                        //response = VoiceCommandResponse.CreateResponse(userConfirmMessage);
+                        //response.AppLaunchArgument = uri.ToString();
+                        //await voiceServiceConnection.ReportSuccessAsync(response);
+
+                    }
+                }
+                catch (Exception ex)
+                {
+
+                }
+
+
             }
             else
             {
@@ -170,9 +204,10 @@ namespace Office365Search.Services.Background
 
         private async Task SearchSharePointDocumentsAsync(string rootSiteUrl, string searchAPIUrl)
         {
-            await ShowProgressScreen("Searching Documents...");
+            await ShowProgressScreen("Searching Requested Documents...");
 
             VoiceCommandResponse response;
+
             var destinationsContentTiles = new List<VoiceCommandContentTile>();
 
             var documents = await Core.Helpers.SharePointHelper.GetSharePointDocuments(rootSiteUrl, searchAPIUrl);
@@ -187,15 +222,9 @@ namespace Office365Search.Services.Background
                     {
                         destinationTile.ContentTileType = VoiceCommandContentTileType.TitleWith68x68IconAndText;
                         destinationTile.Image = await Windows.Storage.StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Office365Search.Services.Background" + document.IconUrl.EnsureStartsWith("/")));
-                        // destinationTile.AppLaunchArgument = "type=" + "SharePointWhatsCheckedOutQueryCommand" + "&itemId=" + document.ItemId.ToString();
-
                         destinationTile.AppLaunchArgument = document.Url;
                         destinationTile.Title = document.Title;
                         destinationTile.TextLine1 = "Last modified: " + document.ModifiedDate.ToString();
-                        // destinationTile.TextLine2 = "test";
-                        //  destinationTile.TextLine1 = document.AuthorInformation.DisplayName;
-                        // destinationTile.TextLine1 = "modified: " + document;
-                        // destinationTile.TextLine2 = "views: " + document.ViewCount;
                         destinationTile.AppContext = document;
 
                         destinationsContentTiles.Add(destinationTile);
@@ -207,33 +236,46 @@ namespace Office365Search.Services.Background
                 }
 
                 await ShowProgressScreen("I found " + documents.Count + " documents...");
-                response = VoiceCommandResponse.CreateResponse(new VoiceCommandUserMessage()
+
+                var userPrompt = new VoiceCommandUserMessage();
+                userPrompt.DisplayMessage = userPrompt.SpokenMessage = "Which document you want to open?";
+
+                var userReprompt = new VoiceCommandUserMessage();
+                userReprompt.DisplayMessage = userReprompt.SpokenMessage = "Please suggest, Which document you want to open?";
+
+                response = VoiceCommandResponse.CreateResponseForPrompt(userPrompt, userReprompt, destinationsContentTiles);
+                // await voiceServiceConnection.ReportSuccessAsync(response);
+                try
                 {
-                    DisplayMessage = "Here are the documents",
-                    SpokenMessage = "Here are your " + destinationsContentTiles.Count + " documents"
+                    var voiceCommandDisambiguationResult = await voiceServiceConnection.RequestDisambiguationAsync(response);
+                    if (voiceCommandDisambiguationResult != null && voiceCommandDisambiguationResult.SelectedItem != null)
+                    {
+                        string uriToLaunch = voiceCommandDisambiguationResult.SelectedItem.AppLaunchArgument;
+                        var uri = new Uri(uriToLaunch);
+                      //  var success = Windows.System.Launcher.LaunchUriAsync(uri);
 
-                }, destinationsContentTiles);
+                        var userMessage = new VoiceCommandUserMessage();
+                        userMessage.DisplayMessage = "Opening the Document.";
+                        userMessage.SpokenMessage = "Opening the Document.";
 
-                 await voiceServiceConnection.ReportSuccessAsync(response);
+                        response = VoiceCommandResponse.CreateResponse(userMessage);
+                        response.AppLaunchArgument = uri.ToString();
+                        
+                      await voiceServiceConnection.RequestAppLaunchAsync(response);
 
-                //new code goes here
-                //try
-                //{
+                        //var userConfirmMessage = new VoiceCommandUserMessage();
+                        //userConfirmMessage.DisplayMessage = userConfirmMessage.SpokenMessage = "Requested Document Opened. Thank you!";
 
-                //    var voiceCommandDisambiguationResult = await voiceServiceConnection.RequestDisambiguationAsync(response);
-                //    if (voiceCommandDisambiguationResult != null)
-                //    {
-                //        DocumentInformation selectedDocument = (DocumentInformation)voiceCommandDisambiguationResult.SelectedItem.AppContext;
-                //    }
-                //}
-                //catch (Exception ex)
-                //{
+                        //response = VoiceCommandResponse.CreateResponse(userConfirmMessage);
+                        //response.AppLaunchArgument = uri.ToString();
+                        //await voiceServiceConnection.ReportSuccessAsync(response);
 
-                //}
-                //new code ends
+                    }
+                }
+                catch (Exception ex)
+                {
 
-
-
+                }
 
 
             }
@@ -346,7 +388,7 @@ namespace Office365Search.Services.Background
         private async void LaunchAppInForeground()
         {
             var userMessage = new VoiceCommandUserMessage();
-            userMessage.SpokenMessage = "Launching Adventure Works";
+            userMessage.SpokenMessage = "Launching Application";
 
             var response = VoiceCommandResponse.CreateResponse(userMessage);
 

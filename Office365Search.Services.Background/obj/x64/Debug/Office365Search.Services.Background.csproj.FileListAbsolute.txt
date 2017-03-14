@@ -1,3 +1,4 @@
+C:\UWP\DWP\Office365Search\Office365Search.Services.Background\obj\x64\Debug\Office365Search.Services.Background.pdb
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\bin\x64\Debug\Office365Search.Services.Background.winmd
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\bin\x64\Debug\Office365Search.Services.Background.pdb
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\bin\x64\Debug\Office365Search.Services.Background.pri
@@ -6,7 +7,6 @@ C:\UWP\DWP\Office365Search\Office365Search.Services.Background\bin\x64\Debug\Off
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\bin\x64\Debug\Office365Search.Core.pri
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\obj\x64\Debug\Office365Search.Services.Background.csprojResolveAssemblyReference.cache
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\obj\x64\Debug\Office365Search.Services.Background.winmd
-C:\UWP\DWP\Office365Search\Office365Search.Services.Background\obj\x64\Debug\Office365Search.Services.Background.pdb
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\obj\x64\Debug\Office365Search.Services.Background.winmdobj
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\obj\x64\Debug\Office365Search.Services.Background.compile.pdb
 C:\UWP\DWP\Office365Search\Office365Search.Services.Background\obj\x64\Debug\priconfig.xml
